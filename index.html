@@ -114,6 +114,25 @@
 			font-weight: bold;
 		}
 
+		.fulltext{
+			background: #fff;
+			padding: 40px;
+			box-sizing: border-box;
+			margin-bottom: 50px;
+		}
+
+		.fulltext h1{
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+
+		.fulltext p{
+			background: 0px;
+			margin: 10px 0px;
+			padding: 0px;
+		}
+
 		.footer{
 			text-align: center;
 		}
@@ -353,40 +372,75 @@
 
 		<div class="row">
 			<h2>Baca Artikel Sampel:</h2>
+
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 fulltext">
+					
+				</div>
+			</div>
+
+			<script src="assets/marked.min.js"></script>
+			<script>
+				$(document).ready(function(){
+
+					$('.fulltext').hide()
+
+					var article_path = window.location.origin+window.location.pathname+'articles/';
+					$('.more').on('click', function(){
+						var filename = $(this).attr('href').replace('#','');
+
+						var url = article_path+filename+'.txt';
+
+						$.get(url, function(response){
+
+							var html = marked(response);
+							var id = window.location.hash.replace('#','');
+							$('.fulltext').attr('id', id);
+							var divPosition = $('#'+id).offset();
+							divPosition.top = divPosition.top+15;
+							$('html, body').animate({scrollTop: divPosition.top}, "slow");
+							$('.fulltext').slideUp().html(html).slideDown();
+
+						});
+
+					});
+				});
+			</script>
+
 			<div class="col-sm-4">
-				<p><b>6 Kriteria Mereka Yang Makan Gaji Tapi Kaya Harta</b>. Jika tetuan berniat nak jadi kaya dengan berbisnes, lalu memutuskan untuk berhenti kerja, maka ketahuilah, makan gaji pun boleh jadi kaya harta juga. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>6 Kriteria Mereka Yang Makan Gaji Tapi Kaya Harta</b>. Jika tetuan berniat nak jadi kaya dengan berbisnes, lalu memutuskan untuk berhenti kerja, maka ketahuilah, makan gaji pun boleh jadi kaya harta juga. <a href="#6-kriteria" class="more">sambung baca &raquo;</a></p>
 
-				<p><b>Kebenaran tentang Makan Gaji dan Berniaga.</b> Ada yang bahagia Makan Gaji, ada yang bahagia Berniaga. Ada yang bersusah Makan Gaji, ada yang bersusah Berniaga <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>Kebenaran tentang Makan Gaji dan Berniaga.</b> Ada yang bahagia Makan Gaji, ada yang bahagia Berniaga. Ada yang bersusah Makan Gaji, ada yang bersusah Berniaga <a href="#kebenaran-makan-gaji"  class="more">sambung baca &raquo;</a> </p>
 
-				<p><b>4 Jenis Pendapatan Yang Menentukan Siapakah Kita.</b> Kita sudah tahu yang dalam setiap bidang pendapatan, ada yang berjaya antara majoriti yang tidak berjaya. Dan setelah kita selidik kita juga tahu 9 kriteria yang menjadikan mereka berjaya dan kaya harta. <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>4 Jenis Pendapatan Yang Menentukan Siapakah Kita.</b> Kita sudah tahu yang dalam setiap bidang pendapatan, ada yang berjaya antara majoriti yang tidak berjaya. Dan setelah kita selidik kita juga tahu 9 kriteria yang menjadikan mereka berjaya dan kaya harta. <a href="#4-jenis-pendapatan" class="more">sambung baca &raquo;</a> </p>
 
-				<p><b>Formula Ini Mampu Mengesan Lompong Bajet Bulanan Kita.</b> Income - Saving - Insurance - Installments - Expense = Surplus, atau dalam bahasa melayunya: <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Formula Ini Mampu Mengesan Lompong Bajet Bulanan Kita.</b> Income - Saving - Insurance - Installments - Expense = Surplus, atau dalam bahasa melayunya: <a href="#formula-kewangan" class="more">sambung baca &raquo;</a></p>
 
-				<p><b>Fungsi Setiap Komponen Formula Belanjawan.</b> Pendapatan - Simpanan - Insurans - Hutang - Belanja = Lebihan. Itu formula belanjawan kita. Kita gelarkan ia 'formula' kerana ia adalah struktur paling asas dalam membangunkan pelan kewangan kita. Ini pelan kewangan peribadi ya. Pelan kewangan syarikat lain ceritanya. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Fungsi Setiap Komponen Formula Belanjawan.</b> Pendapatan - Simpanan - Insurans - Hutang - Belanja = Lebihan. Itu formula belanjawan kita. Kita gelarkan ia 'formula' kerana ia adalah struktur paling asas dalam membangunkan pelan kewangan kita. Ini pelan kewangan peribadi ya. Pelan kewangan syarikat lain ceritanya. <a href="#fungsi-komponen" class="more">sambung baca &raquo;</a></p>
 			</div>
 			<div class="col-sm-4">
-				<p><b>Alat Kerja Setiap Komponen Formula Belanjawan.</b> Berikut pula adalah senarai alat kerja bagi setiap komponen formula di atas: <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Alat Kerja Setiap Komponen Formula Belanjawan.</b> Berikut pula adalah senarai alat kerja bagi setiap komponen formula di atas: <a href="#alat-kerja-komponen" class="more">sambung baca &raquo;</a></p>
 
-				<p><b>3 Cara Menyimpan Jika Kita Makan Gaji.</b> Salah satu kriteria mereka yang kaya harta adalah tabiat menyimpan yang konsisten. Maka kita perlu ada strategi untuk membina tabiat menyimpan yang konsisten ini. <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>3 Cara Menyimpan Jika Kita Makan Gaji.</b> Salah satu kriteria mereka yang kaya harta adalah tabiat menyimpan yang konsisten. Maka kita perlu ada strategi untuk membina tabiat menyimpan yang konsisten ini. <a href="#3-cara-menyimpan" class="more">sambung baca &raquo;</a> </p>
 
-				<p><b>Langkah Seterusnya Setelah Menyimpan.</b> Fokus utama fasa pertama kewangan peribadi kita adalah untuk membina habit menyimpan yang konsisten. Tidak kira apa berlaku, kita sudah ada sistem yang memastikan kita menyimpan setiap bulan. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Langkah Seterusnya Setelah Menyimpan.</b> Fokus utama fasa pertama kewangan peribadi kita adalah untuk membina habit menyimpan yang konsisten. Tidak kira apa berlaku, kita sudah ada sistem yang memastikan kita menyimpan setiap bulan. <a href="#setelah-menyimpan" class="more">sambung baca &raquo;</a></p>
 
-				<p><b>Mengapa Kita Perlu Melabur Dalam Diri Sendiri Dahulu?</b> Faktor utama seseorang pelabur itu gagal (ya, tersontot!) dalam pelaburannya adalah pertama, kerana tidak berdisiplin dalam melabur dan kedua, kerana tidak cukup ilmu dalam bidang pelaburan yang diceburi. <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>Mengapa Kita Perlu Melabur Dalam Diri Sendiri Dahulu?</b> Faktor utama seseorang pelabur itu gagal (ya, tersontot!) dalam pelaburannya adalah pertama, kerana tidak berdisiplin dalam melabur dan kedua, kerana tidak cukup ilmu dalam bidang pelaburan yang diceburi. <a href="#mengapa-labur-sendiri" class="more">sambung baca &raquo;</a> </p>
 
-				<p><b>Satu-satunya Fungsi Insurans Dalam Formula Kewangan.</b> "Melindungi". Itulah fungsi insurans, khususnya dalam formula kewangan kita. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Satu-satunya Fungsi Insurans Dalam Formula Kewangan.</b> "Melindungi". Itulah fungsi insurans, khususnya dalam formula kewangan kita. <a href="#fungsi-insurans" class="more">sambung baca &raquo;</a></p>
 			</div>
 			<div class="col-sm-4">
-				<p><b>Komponen Formula Kewangan Paling Dibenci: Hutang.</b> Ya, semua orang benci hutang. Tak, bukan masa dapat duit. Masa dapat duit hutang tersebut rasa macam Raja! <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>Komponen Formula Kewangan Paling Dibenci: Hutang.</b> Ya, semua orang benci hutang. Tak, bukan masa dapat duit. Masa dapat duit hutang tersebut rasa macam Raja! <a href="#hutang" class="more">sambung baca &raquo;</a> </p>
 				
-				<p><b>Tertib Berhutang.</b> Ini adalah tulisan paling pendek dalam ebook ini. Tertib berhutang adalah seperti berikut: <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Tertib Berhutang.</b> Ini adalah tulisan paling pendek dalam ebook ini. Tertib berhutang adalah seperti berikut: <a href="#tertib-berhutang" class="more">sambung baca &raquo;</a></p>
 				
-				<p><b>Perangkap Hutang Paling Dahsyat.</b> Ini adalah hutang yang telah menjerumuskan 95000 orang ke lembah bankrap di tanah air ini. Ini juga adalah jenis hutang yang paling mudah dibuat. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>Perangkap Hutang Paling Dahsyat.</b> Ini adalah hutang yang telah menjerumuskan 95000 orang ke lembah bankrap di tanah air ini. Ini juga adalah jenis hutang yang paling mudah dibuat. <a href="#perangkap-hutang" class="more">sambung baca &raquo;</a></p>
 				
-				<p><b>Teknik SSDSSK: Cara Pantas Melangsaikan Hutang Kad Kredit.</b> Satu cara untuk melangsaikan hutang kad kredit dengan pantas ialah SSDSSK. Atau "Susah-susah Dahulu Senang-senang Kemudian". :D <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>Teknik SSDSSK: Cara Pantas Melangsaikan Hutang Kad Kredit.</b> Satu cara untuk melangsaikan hutang kad kredit dengan pantas ialah SSDSSK. Atau "Susah-susah Dahulu Senang-senang Kemudian". :D <a href="#ssdssk" class="more">sambung baca &raquo;</a> </p>
 				
-				<p><b>4 Disiplin Menggunakan Kad Kredit Dengan Betul.</b> Kita mahu lari daripada jerut perangkap kad kredit. Kita tidak mahu menjadi salah seorang daripada 95000 orang yang bangkrap kerana kad kredit. <a href="#">sambung baca &raquo;</a></p>
+				<p><b>4 Disiplin Menggunakan Kad Kredit Dengan Betul.</b> Kita mahu lari daripada jerut perangkap kad kredit. Kita tidak mahu menjadi salah seorang daripada 95000 orang yang bangkrap kerana kad kredit. <a href="#4-disiplin-kad-kredit" class="more">sambung baca &raquo;</a></p>
 				
-				<p><b>Komponen Kewangan Paling Pelik.</b> Dalam formula kewangan yang kita maklum ada satu komponen yang sangat pelik. Ya, dalam formula berikut ada satu komponen yang nampak biasa, tetapi apabila kita fikirkan dengan mendalam ada banyak perkara pelik padanya: <a href="#">sambung baca &raquo;</a> </p>
+				<p><b>Komponen Kewangan Paling Pelik.</b> Dalam formula kewangan yang kita maklum ada satu komponen yang sangat pelik. Ya, dalam formula berikut ada satu komponen yang nampak biasa, tetapi apabila kita fikirkan dengan mendalam ada banyak perkara pelik padanya: <a href="#komponen-pelik" class="more">sambung baca &raquo;</a> </p>
 			</div>
 		</div>
 	</div>

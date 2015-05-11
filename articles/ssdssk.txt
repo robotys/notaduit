@@ -1,0 +1,62 @@
+Satu Lagi Cara Pantas Melangsaikan Hutang Kad Kredit
+===
+
+Sebelum ini kita sudah tahu dan faham tentang teknik SSLLJB. Ringkasnya ia bermula dengan kad hutang paling kecil kepada hutang kad paling besar. Daripada contoh yang diberikan, keseluruhan total hutang RM
+
+Satu lagi cara untuk melangsaikan hutang kad kredit dengan pantas ialah SSDSSK. Atau "Susah-susah Dahulu Senang-senang Kemudian". :D
+
+Ia sama sahaja dengan teknik sebelum ini, bezanya kita susun prioriti mengikut hutang yang paling besar kepada yang paling kecil.
+
+Mengikut contoh sebelum ini:
+
+1) Kad Maybank = RM 8000 (min: RM 400)
+2) Kad CIMB = RM 3000 (min: RM 200)
+3) Kad Citibank = RM 15 000 (min: RM 700)
+4) Kad American Express = RM 1500 (min: RM 100)
+
+Susunan priority teknik SSDSSK ialah
+
+1) CitiBank = RM 15000
+2) MayBank = RM 8000
+3) CIMB = RM 3000
+4) AMEX = RM 1500
+
+Maka, kita fokus membayar pada citibank terlebih dahulu. Bajet masih sama seperti sebelum ini iaitu RM1800. Maka taburan bayaran bulanan adalah seperti berikut:
+
+1) CitiBank = RM 15000 (monthly: RM 700 + RM 400 = RM 1100)
+2) MayBank = RM 8000 (min: 400)
+3) CIMB = RM 3000 (min 200)
+4) AMEX = RM 1500 (min 100)
+
+Maka, hutang Citibank akan tamat pada bulan ke 14 (15000/1100 = 13.6 ~ 14). Pada bulan ke 15, kita mula membayar hutang kan kredit kepada Maybank dengan menggunakan bayaran bulanan Citibank. Rujuk jadual berikut:
+
+1) CitiBank = RM 0 (RM 1100, use to pay Maybank)
+2) MayBank = RM 8000 (month: 400 + 1100 = RM 1500)
+3) CIMB = RM 3000 (min 200)
+4) AMEX = RM 1500 (min 100)
+
+Pada bulan ke 6 selepas Citibank tamat maka hutang Maybank juga tamat (8000/1500 = 5.3 ~ 6). Pada bulan ke 21 (15+6) daripada kita mula operasi melangsaikan hutang, kita mula membayar hutang kan kredit kepada CIMB dengan menggunakan bayaran bulanan Maybank. Rujuk jadual berikut:
+
+1) CitiBank = RM 0 
+2) MayBank = RM 0 (RM 1500 use to pay CIMB)
+3) CIMB = RM 3000 (monthly: RM 200 + RM 1500 = RM 1700)
+4) AMEX = RM 1500 (min 100)
+
+Pada bulan ke 2 selepas Maybank tamat maka hutang Maybank juga tamat (3000/1700 = 1.7 ~ 2). Pada bulan ke 23 (21+2) daripada kita mula operasi melangsaikan hutang, kita mula membayar hutang akhir kad kredit kepada AMEX dengan menggunakan bayaran bulanan CIMB. Rujuk jadual berikut:
+
+1) CitiBank = RM 0 
+2) MayBank = RM 0
+3) CIMB = RM 3000 (RM 1700 use to pay AMEX)
+4) AMEX = RM 1500 (monthly: RM 100 + RM 1700 = RM 1800)
+
+Tidak sampai satu bulan pun hutang kita pada AMEX terus habis di bayar! Ini kerana jumlah hutang AMEX ialah RM 1500 manakala bajet kita untuk bayar hutang adalah RM 1800!
+
+Jika dibandingkan dengan teknik sebelum ini, teknik SSDSSK lebih awal satu bulan.
+
+Malah kita juga rasa seronok, kerana masa yang diambil untuk melangsaikan setiap satu hutang semakin pendek.
+
+15 + 6 + 2 + 1 bulan membuatkan kita rasa lebih teruja berbanding 3 + 5 + 7 + 9 bulan bagi teknik sebelum ini.
+
+Cumanya, untuk bertahan selama 15 bulan pertama itu memang perlu bertabahlah. Antara perkara yang boleh kita buat sepanjang 15 bulan itu ialah melihat baki hutang kita yang paling besar semakin mengecil dan akhirnya hilang.
+
+Ia menjadikan kita sangat yakin yang kita boleh melangsaikan semua hutang-hutang kita yang lain kerana hutang-hutang yang lain itu jauh lebih kecil daripada hutang 15 bulan itu. 
