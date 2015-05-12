@@ -279,6 +279,11 @@
 				<script>
 				$(document).ready(function(){
 					console.log('jQuery 2.1.4 Ready');
+					var yz_url = '';
+					if(window.location.hostname == 'yezza.net') yz_url = 'http://yezza.net';
+					else yz_url = 'http://yezza.dev';
+
+					console.log(yz_url);
 
 					$('#yz_submit').on('click', function(){
 
@@ -321,7 +326,7 @@
 
 						if(valid){
 
-							$.post('http://yezza.net/api/new_order/'+$('[name=item_key]').val(), param, function(response){
+							$.post(yz_url+'/api/new_order/'+$('[name=item_key]').val(), param, function(response){
 								var ret = JSON.parse(response);
 
 								if(ret['status']){
